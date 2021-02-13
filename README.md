@@ -1,12 +1,24 @@
 # What I Learned in Week 3 at Code Immersives
 
-## Introduction
+### About
 
 In this README file I try to simply explain the concepts I learned in week 3 at Code Immersives.
 
 ---
 
-## Introduction to Git & GitHub
+### Topics Covered
+
+1. Introduction to Git & GitHub
+2. Introduction to JavaScript
+3. Linking JavaScript to a HTML file
+4. Creating Variables in JavaScript
+5. Math in JavaScript
+6. Concatenating in JavaScript
+7. Introduction to Jest
+
+---
+
+### Introduction to Git & GitHub
 
 Version control systems, VCS, are used to help keep track of changes that are made to a project over a period of time. It is used by groups of people working on spreadsheets, word documents, photo editors, computer code, and more. 
 
@@ -48,7 +60,7 @@ a-directory-name$ git push
 
 The new changes have been moved to the server. Every time a computer programmer wants to add changes to a Git server, they would repeat this process. 
 
-With the code now on the Git server, other computer programmers have the ability to get a copy of that code. They can get a copy of the code by logging onto GitHub's web application and going onto the webpage with the repository of that code, then fork it. **Fork** is when a copy of code is made onto Git account from another Git account. Once the forked version is on their account, they can clone the code onto their local machines with the **git clone** command and the repositories URL. In example, on a terminal:
+With the code now on the Git server, other computer programmers have the ability to get a copy of that code. They can get a copy of the code by logging onto GitHub's web application and going onto the webpage with the repository of that code, then fork it. **Fork** is when a copy of code is made onto a Git account from another Git account. Once the forked version is on their account, they can clone the code onto their computer with the **git clone** command and the repositories URL. In example, on a terminal:
 
 ```shell
 a-directory-name$ git clone https://github.com/timothynegron/make-variables-not-war
@@ -64,7 +76,7 @@ If a computer programmer is invited to **collaborate** on the project, they can 
 a-directory-name$ git pull
 ```
 
-If a programmers pushes changes to a file that a co-programmer was working on and then that co-programmer pulls the new changes, a **conflict** would occur. The co-programmer that pulled from the git server could then choose to **merge** both files, decline any changes, or accept the new changes and not keep the changes they've made. To avoid conflicts, programmers must communicate and plan out stages of development.
+If a programmers pushes changes to a file that a co-programmer was working on and then that co-programmer pulls the new changes, a **conflict** would occur. The co-programmer that pulled the code from the git server could then choose to **merge** both files, decline any changes, or accept the new changes and not keep the changes they've made. To avoid conflicts, programmers must communicate and plan out stages of development.
 
 
 ##### Here is a pictorial representation of the Git version control system: 
@@ -74,13 +86,13 @@ If a programmers pushes changes to a file that a co-programmer was working on an
 
 ---
 
-## JavaScript
+### Introduction to JavaScript
 
 JavaScript is a programming language that was originally designed to build interactive web pages. Later, it was made possible to run outside of a web browser with a technology called Node. Node gave developers the ability to program mobile applications, command-line tools, and more with JavaScript. Today, JavaScript is one of the most, if not the most, popular programming language.
 
 ---
 
-## Linking JavaScript with HTML
+### Linking JavaScript to a HTML file
 
 To link a JavaScript, .js, file to a HTML file, .html, the following line of code needs to be within the `<body>` tag or the `<header>` tag of the .html file:
 
@@ -92,7 +104,7 @@ In the quotes would be the name of the JavaScript file with the .js extension. I
 
 ---
 
-## JavaScript Variable Types
+### JavaScript Variable Types
 
 With JavaScript, variable names can be created and each variable can be set with a value. The value can be of many different types. Here is a list of JavaScript variable types:
 
@@ -104,14 +116,14 @@ With JavaScript, variable names can be created and each variable can be set with
 * **Undefined:** a variable that has not been set with a value.
 
 ---
-## Creating Variables in JavaScript
+### Creating Variables in JavaScript
 
 Creating variables in JavaScript is more straight forward than other computer programming languages. To create a variable in JavaScript, you must use the `let` keyword before the name of the variable. The variable name cannot contain spaces. In example:
 
 ```javascript
 let myFirstVariable = 1;
 ```
-The line of JavaScript code above creates a variable with a type of number. Where the `let` keyword tells the computer to create a variable, `myFirstVariable` is the variable name, and `= 1` sets the value of the variable `myFirstVariable` to one *and tells the computer that the variable's type is number*. 
+The line of JavaScript code above creates a variable with a type of number. Where the `let` keyword tells the computer to create a variable, `myFirstVariable` is the variable name, and `= 1` sets the value of the variable `myFirstVariable` to one *and tells the computer that the variable has a type of number*. 
 
 Here is an example of creating a string variable type:
 
@@ -119,7 +131,7 @@ Here is an example of creating a string variable type:
 let myFirstString = 'Hello World';
 ```
 
-The single quotes before and after the text, *tells the computer that the variable's type is String*.
+The single quotes before and after the text, *tells the computer that the variable has a type of String*.
 
 Here is an example of creating a boolean variable:
 
@@ -129,7 +141,7 @@ let myFirstBoolean = true;
 True and false, without quotations, is a value and keyword in JavaScript that *tells the computer that the type of the variable is boolean*.
 
 ---
-## Math in JavaScript
+### Math in JavaScript
 
 Math in JavaScript can be done with the following symbols as the basic math operators:
 
@@ -142,6 +154,7 @@ Here is an example in code:
 
 ```javascript
 let sum = 4 * 4;
+
 console.log(sum);
 ```
 
@@ -152,7 +165,7 @@ Output:
 ```
 
 ---
-## Concatenating in JavaScript
+### Concatenating in JavaScript
 
 In JavaScript you can link, or concatenate, two String variables with the addition symbol. For example:
 
@@ -175,7 +188,7 @@ Where the value of `myFirstName`, the space in between the single quotes, and th
 
 ---
 
-## Introduction to Jest
+### Introduction to Jest
 
 *Jest* is a JavaScript unit testing tool that gives computer programmers instant feedback on the test they create for their code. **Unit Testing** is important in software development for ensuring that all components of a program is working properly.
 
@@ -183,6 +196,6 @@ Where the value of `myFirstName`, the space in between the single quotes, and th
 
 ---
 
-## Summary
+### Summary
 
 To summarize, Git is a powerful version control system that helps software developers maintain a history of revisions that they make to their code. GitHub is a website that helps manage Git repositories. JavaScript is a computer programming language that was originally design to create interactive web applications and is now also used to create interactive mobile and desktop applications. Finally, Jest is a JavaScript unit testing tool that helps build stable computer applications.
