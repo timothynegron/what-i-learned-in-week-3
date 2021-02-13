@@ -92,10 +92,10 @@ If a programmers pushes changes to a file that a co-programmer was working on an
 On a terminal:
 
 1. Go to a directory you want to work from.
-2. Enter the git init command.
-3. Create any files you want. *Good time to create a README.md*
-4. Enter the git add command and add the files.
-5. Enter the git commit -m command and enter a good message.
+2. Enter the `git init command`.
+3. Create any files you want. *Good time to create a `README.md`*
+4. Enter the `git add command` and add the files.
+5. Enter the `git commit -m "a message"` command and enter a good message.
 
 Next, on a web browser:
 
@@ -104,9 +104,9 @@ Next, on a web browser:
 
 Finally, on a terminal within the same directory:
 
-1. Enter git branch -M main
-2. Enter git remote add origin https://github.com/username/new_repo_name
-3. Enter git push -u origin main
+1. Enter `git branch -M main`
+2. Enter `git remote add origin https://github.com/username/new_repo_name`
+3. Enter `git push -u origin main`
 
 ---
 
