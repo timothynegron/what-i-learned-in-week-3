@@ -108,6 +108,8 @@ Finally, on a terminal within the same directory:
 2. Enter git remote add origin https://github.com/username/new_repo_name
 3. Enter git push -u origin main
 
+---
+
 ### Introduction to JavaScript
 
 JavaScript is a programming language that was originally designed to build interactive web pages. Later, it was made possible to run outside of a web browser with a technology called Node. Node gave developers the ability to program mobile applications, command-line tools, and more with JavaScript. Today, JavaScript is one of the most, if not the most, popular programming language.
