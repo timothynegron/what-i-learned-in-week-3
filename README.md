@@ -12,7 +12,7 @@ Version control systems, VCS, are used to help keep track of changes that are ma
 
 *GIT* is one of many version control systems that is used in software development. With GIT, computer programmers can send a version of their code to Git servers. Once their code is on a Git server, with Git and GitHub other computer programmers can get a copy of that code. The action of sending code to the cloud is called **push** and the action of downloading a version of code from a server to a personal computer is called **clone**. *GitHub* is a web application that computer programmers use *to manage versions of their code on Git servers*.
 
-Almost all computer programmers use a local computers command line interface to perform Git actions. This is because of how quick and easy it is to do compared when using a graphical user interface. To start a repository within a local machine, they must first perform the **git init** command within the directory they choose to work on within their computer. In example, on a terminal:
+Almost all computer programmers use a local computers command line interface to perform Git actions. This is because of how quick and easy it is to do compared when using a graphical user interface. To start a repository within a local machine, they must first perform the **git init** command within the directory they choose to work on within a computer. In example, on a terminal:
 
 ```shell
 a-directory-name$ git init
@@ -20,11 +20,11 @@ a-directory-name$ git init
 Initialized empty Git repository in /Users/Documents/new-directory/.git/
 ```
 
-With the git init command, a folder named .git will be created in their computers storage. In software development, a **repository** is a storage location for storing files with computer code and the different versions of that code. 
+With the git init command, a folder named .git will be created in the computers storage. This is the local repository. In software development, a **repository** is a storage location for storing files with computer code and the different versions of that code. 
 
 It is important for computer programmers to track code changes that are made over a period of time. This is because when new features are added to the code, it is possible to come across issues that cause the code to not function properly or at all. Saving different versions of that code allows computer programmers to not only start from scratch but possibly even identify what went wrong when adding a new feature.
 
-When a computer programmer wants to send new changes to their code to a Git server, they will first have to use the **git add** command. For example, on a terminal: 
+When a computer programmer wants to send new changes to their code to a Git server, the remote repository, they will first have to use the **git add** command. For example, on a terminal: 
 
 ```shell
 a-directory-name$ git add main.js
@@ -44,11 +44,11 @@ The "git package", which is now in the .git folder that was created earlier with
 ```shell
 a-directory-name$ git push
 ```
-> To see a log of all git activity, use the **git log** command.
+> To see a log of all Git activity, use the **git log** command.
 
 The new changes have been moved to the server. Every time a computer programmer wants to add changes to a Git server, they would repeat this process. 
 
-With the code now on the Git server, other computer programmers have the ability to get a copy of that code. They can get a copy of the code by logging onto GitHub's web application and going onto the webpage with the repository of that code and then fork it. **Fork** is when a copy of that code is made onto another Git account. Once the forked version is on their account, they can clone the code onto their local machines with the **git clone** command and the repositories URL. In example, on a terminal:
+With the code now on the Git server, other computer programmers have the ability to get a copy of that code. They can get a copy of the code by logging onto GitHub's web application and going onto the webpage with the repository of that code, then fork it. **Fork** is when a copy of code is made onto Git account from another Git account. Once the forked version is on their account, they can clone the code onto their local machines with the **git clone** command and the repositories URL. In example, on a terminal:
 
 ```shell
 a-directory-name$ git clone https://github.com/timothynegron/make-variables-not-war
@@ -64,7 +64,7 @@ If a computer programmer is invited to **collaborate** on the project, they can 
 a-directory-name$ git pull
 ```
 
-If a programmers pushes changes to the a file that a co-programmer was working on and then that co-programmer pulls the new changes, a **conflict** would occur. The co-programmer that pulled from the git server could then choose to **merge** both files, decline any changes, or accept the new changes and not keep the changes they've made. To avoid conflicts, programmers must communicate and plan out stages of development.
+If a programmers pushes changes to a file that a co-programmer was working on and then that co-programmer pulls the new changes, a **conflict** would occur. The co-programmer that pulled from the git server could then choose to **merge** both files, decline any changes, or accept the new changes and not keep the changes they've made. To avoid conflicts, programmers must communicate and plan out stages of development.
 
 
 ##### Here is a pictorial representation of the Git version control system: 
@@ -76,7 +76,7 @@ If a programmers pushes changes to the a file that a co-programmer was working o
 
 ## JavaScript
 
-JavaScript is a programming language that was originally designed to build interactive web pages. Later, it was made possible to run outside of a web browser with a technology called Node. This gave developers the ability to program mobile applications, command-line tools, and more with JavaScript. Today, JavaScript is one of the most, if not the most, popular programming language.
+JavaScript is a programming language that was originally designed to build interactive web pages. Later, it was made possible to run outside of a web browser with a technology called Node. Node gave developers the ability to program mobile applications, command-line tools, and more with JavaScript. Today, JavaScript is one of the most, if not the most, popular programming language.
 
 ---
 
@@ -111,7 +111,7 @@ Creating variables in JavaScript is more straight forward than other computer pr
 ```javascript
 let myFirstVariable = 1;
 ```
-The line of JavaScript code above creates a number variable type. Where the `let` keyword tells the computer to create a variable, `myFirstVariable` is the variable name, and `= 1` sets the value of the variable `myFirstVariable` to one *and tells the computer that it is a number variable type*. 
+The line of JavaScript code above creates a variable with a type of number. Where the `let` keyword tells the computer to create a variable, `myFirstVariable` is the variable name, and `= 1` sets the value of the variable `myFirstVariable` to one *and tells the computer that the variable's type is number*. 
 
 Here is an example of creating a string variable type:
 
@@ -119,7 +119,7 @@ Here is an example of creating a string variable type:
 let myFirstString = 'Hello World';
 ```
 
-The single quotes before and, after the text, *tells the computer that the type of the variable is String*.
+The single quotes before and after the text, *tells the computer that the variable's type is String*.
 
 Here is an example of creating a boolean variable:
 
@@ -171,7 +171,7 @@ Output:
 Timothy Negron
 ```
 
-Where the value of `myFirstName`, the space in between the single quotes, and the value of `myLastName` is set to `myFullName`. The result is a **concatenation** of all three values.
+Where the value of `myFirstName`, the space in between the single quotes, and the value of `myLastName` is assigned to `myFullName`. The result is a **concatenation** of all three values.
 
 ---
 
@@ -185,4 +185,4 @@ Where the value of `myFirstName`, the space in between the single quotes, and th
 
 ## Summary
 
-To summarize, Git is a very powerful version control system that helps software developers maintain a history of revisions that they make to their code. GitHub is a website that helps manage Git repositories. JavaScript is a computer programming language that was originally design to create interactive web applications and is now also used to create interactive mobile and desktop applications. Finally, Jest is a JavaScript unit testing tool that helps build stable computer applications.
+To summarize, Git is a powerful version control system that helps software developers maintain a history of revisions that they make to their code. GitHub is a website that helps manage Git repositories. JavaScript is a computer programming language that was originally design to create interactive web applications and is now also used to create interactive mobile and desktop applications. Finally, Jest is a JavaScript unit testing tool that helps build stable computer applications.
