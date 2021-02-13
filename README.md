@@ -9,12 +9,13 @@ In this README file I try to simply explain the concepts I learned in week 3 at 
 ### Topics Covered
 
 1. Introduction to Git & GitHub
-2. Introduction to JavaScript
-3. Linking JavaScript to a HTML file
-4. Creating Variables in JavaScript
-5. Math in JavaScript
-6. Concatenating in JavaScript
-7. Introduction to Jest
+2. Steps for Creating a New Repository
+3. Introduction to JavaScript
+4. Linking JavaScript to a HTML file
+5. Creating Variables in JavaScript
+6. Math in JavaScript
+7. Concatenating in JavaScript
+8. Introduction to Jest
 
 ---
 
@@ -85,6 +86,27 @@ If a programmers pushes changes to a file that a co-programmer was working on an
 
 
 ---
+
+### Steps for Creating a New Repository
+
+On a terminal:
+
+1. Go to a directory you want to work from.
+2. Enter the git init command.
+3. Create any files you want. *Good time to create a README.md*
+4. Enter the git add command and add the files.
+5. Enter the git commit -m command and enter a good message.
+
+Next, on a web browser:
+
+1. Log into your GitHub account.
+2. Create a new repository.
+
+Finally, on a terminal within the same directory:
+
+1. Enter git branch -M main
+2. Enter git remote add origin https://github.com/username/new_repo_name
+3. Enter git push -u origin main
 
 ### Introduction to JavaScript
 
@@ -190,7 +212,11 @@ Where the value of `myFirstName`, the space in between the single quotes, and th
 
 ### Introduction to Jest
 
-*Jest* is a JavaScript unit testing tool that gives computer programmers instant feedback on the test they create for their code. **Unit Testing** is important in software development for ensuring that all components of a program is working properly.
+*Jest* is a JavaScript unit testing tool that gives computer programmers instant feedback on the test they create for their code. **Unit Testing** is important in software development for ensuring that all components of a program is working properly. On a terminal, to start the Jest program, enter:
+
+```shell
+a-director$ jest --watch-all
+```
 
 > To install Jest, on a terminal enter: npm install --global jest
 
